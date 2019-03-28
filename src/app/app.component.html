@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -17,5 +17,31 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
+-->
+<router-outlet></router-outlet> 
 
-<router-outlet></router-outlet>
+<!-- esto se agrego -->
+<!-- <div class="contenedor">
+  <div class="contenedor_formulario">
+    <h1 class="is-size-1">Subir archivos a Cloud Storage</h1>
+    <p class="download" *ngIf="finalizado">URL de descarga: <a href="{{ URLPublica }}" target="_blank">Descargar</a></p>
+    <form [formGroup]="archivoForm" (ngSubmit)="subirArchivo()">
+      <div class="file has-name is-boxed">
+        <label class="file-label">
+          <input class="file-input" type="file" formControlName="archivo" (change)="cambioArchivo($event)">
+          <span class="file-cta">
+            <span class="file-label">
+              Elegir un archivo…
+            </span>
+          </span>
+          <span class="file-name">
+            {{ mensajeArchivo }}
+          </span>
+        </label>
+      </div>
+      <hr>
+      <progress *ngIf="porcentaje > 0 && porcentaje < 100" class="progress is-large is-success" value="{{porcentaje}}" max="100">{{porcentaje}}%</progress>
+      <button [ngClass]="{'button': true, 'is-success': true, 'is-large': true, 'is-loading': porcentaje > 0 && porcentaje < 100}" [disabled]="!archivoForm.valid && (porcentaje > 0 && porcentaje < 100)">Subir archivo</button>
+    </form>
+  </div>
+</div> -->

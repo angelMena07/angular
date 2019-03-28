@@ -1,0 +1,80 @@
+<app-header></app-header>
+  <!--/ Intro Single star /-->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Reserva con nosotros.</h1>
+            <span class="color-text-a">Ingresa todo los datos para generar una reservacón</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="">Inicio</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="reservations-view">Reservación</a>
+              </li>
+
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Intro Single End /-->
+
+  <!--/ Agent Single Star /-->
+  <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+      <div class="form-comments">
+    
+                <form class="form-a">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label for="reserva_nombre">Ingresa nombre completo</label>
+                        <input type="text" class="form-control form-control-lg form-control-a"
+                         name="reserva_nombre" id="reserva_nombre" placeholder="Nombre completo *" [(ngModel)]="name" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label for="reserva_email">Ingresa email</label>
+                        <input type="email" class="form-control form-control-lg form-control-a" 
+                       name="reserva_email" id="reserva_email" placeholder="Email *" [(ngModel)]="email" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <label for="reserva_tamanioGrupo">Ingresa cantidad de personas</label>
+                        <input type="people" class="form-control form-control-lg form-control-a"
+                        name="reserva_tamanioGrupo" id="reserva_tamanioGrupo" placeholder="Número de personas *" [(ngModel)]="size" value="" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <label for="reserva_fecha">Ingresa fecha</label>
+                        <input type="date" class="form-control form-control-lg form-control-a" 
+                       name="reserva_fecha" id="reserva_fecha" placeholder="Fecha *" value="" [(ngModel)]="date" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                          <label for="reserva_fecha">Ingresa hora</label>
+                          <input type="number" class="form-control form-control-lg form-control-a" 
+                         name="reserva_fecha" id="reserva_fecha" placeholder="Hora *" value="" [(ngModel)]="hour" required>
+                        </div>
+                      </div>
+                    <div class="col-md-12">
+                      
+                      <button type="submit" class="btn btn-a" (click)="sendReservation()" value="Agregar">Generar reservación</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+  <!--/ Agent Single End /-->
+  <app-footer></app-footer>
