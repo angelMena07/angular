@@ -6,55 +6,55 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">Navios<sup>Admin</sup></div>
-      </a>
+          <!-- Sidebar - Brand -->
+          <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin/dashboard">
+            <div class="sidebar-brand-icon rotate-n-15">
+              <i class="fas fa-laugh-wink"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">Navios<sup>Admin</sup></div>
+          </a>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+          <!-- Divider -->
+          <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="index">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
-      </li>
+          <!-- Nav Item - Dashboard -->
+          <li class="nav-item">
+            <a class="nav-link" href="admin/dashboard">
+              <i class="fas fa-fw fa-tachometer-alt"></i>
+              <span>Dashboard</span></a>
+          </li>
 
-      <!-- Divider -->
-      <hr class="sidebar-divider">
+          <!-- Divider -->
+          <hr class="sidebar-divider">
 
-      <!-- Nav Item - Tablas reservas -->
-      <li class="nav-item active">
-        <a class="nav-link" href="tables">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Reservas</span></a>
-      </li>
+          <!-- Nav Item - Tablas reservas -->
+          <li class="nav-item active">
+            <a class="nav-link" href="admin/reservas">
+              <i class="fas fa-fw fa-table"></i>
+              <span>Reservas</span></a>
+          </li>
 
-  <!-- Divider -->
-  <hr class="sidebar-divider">
+        <!-- Divider -->
+        <hr class="sidebar-divider">
 
-<!-- Nav Item - Tablas contacto -->
-<li class="nav-item active">
-  <a class="nav-link" href="tables-contact">
-    <i class="fas fa-fw fa-table"></i>
-    <span>Contactos</span></a>
-</li>
-  <!-- Divider -->
-  <hr class="sidebar-divider">
+        <!-- Nav Item - Tablas contacto -->
+        <li class="nav-item active">
+          <a class="nav-link" href="admin/comentarios">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Comentarios</span></a>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
 
 
 
-      <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
+          <!-- Sidebar Toggler (Sidebar) -->
+          <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+          </div>
 
-    </ul>
-    <!-- End of Sidebar -->
+        </ul>
+        <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -111,7 +111,7 @@
                   Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="index" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="admin/dashboard" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
@@ -131,7 +131,7 @@
           <p class="mb-4">Aqui se muestra las reservas realizadas por los clientes de NaviosRestaurant.
           <!-- <a target="_blank" href="https://datatables.net">official DataTables documentation</a>--> </p> 
 
-          <!-- DataTales Example -->
+          <!-- Datos tabla -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Reservas</h6>
@@ -165,18 +165,6 @@
                         <button type="submit" class="btn btn-sm btn-success" (click)="openWindowCustomClass(content, reserva)">Editar</button> 
                         
                       </td>
-                    <!-- <td>Editar | 
-                  <form method="POST" action="{{url('/delete/'.$reservitas->id)}}">
-                  {{csrf_field()}}
-                  {{method_field('DELETE') }}
-                  <button type="submit" onclick="return confirm('¿Borrar?');">Borrar</button>
-
-                  <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('¿Borrar?');">Borrar</button> 
-
-
-                   
-                   </td> -->
-              
                   </tr>
               </tbody>
             </table>
